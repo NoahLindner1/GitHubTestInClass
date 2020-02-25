@@ -2,15 +2,18 @@
 
 using namespace std;
 
-void square(int num){
-    int result = num * num;
+void power(int base, int exp){
+    int result = 1;
+    for(int i = 0; i < exp;i++){
+        result = result * base;
+    }
     cout << result << endl;
 }
 
 int main(){
 
     cout << "GitHub Test" << endl;
-    square(5);
+    power(5,3);
     return 0;
 
 }
