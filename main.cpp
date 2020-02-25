@@ -2,8 +2,8 @@
 
 using namespace std;
 
-void power(int base, int exp){
-    int result = 1;
+void power(double base, int exp){
+    double result = 1.0;
     for(int i = 0; i < exp;i++){
         result = result * base;
     }
@@ -14,6 +14,7 @@ int main(){
 
     cout << "GitHub Test" << endl;
     power(5,3);
+    power(3.3,2);
     return 0;
 
 }
